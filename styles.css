@@ -1,0 +1,387 @@
+/* <general> */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* </general> */
+
+/* <navigation> */
+
+.burger-menu{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.menu-open {
+    position: absolute;
+    top: 1rem;
+    /*left: 6.4rem;*/
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: solid 7px rgb(255,255,255);
+    border-radius: 9px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 12px 8px 8px 8px;
+}
+
+.menu-open span {
+    display: flex;
+    width: 40px;
+    height: 6px;
+    background-color: rgb(128, 128, 128);
+    margin: 6px 0;
+    position: relative;
+    top: -4px;
+    left: 0px;
+}
+
+.menu-open:hover {
+    /*border-color: rgb(214, 214, 214);*/
+    border: solid 7px rgb(128, 128, 128);
+    transition: 0.5s;
+}
+
+
+.nav {
+    position: absolute;
+    float: left;
+    top: 0;
+    left: -13%;
+    width: 12%;
+    height: 300px;
+    background-color: rgb(255,255,255);
+    border: solid 1px black;
+    transition: 0.3s;
+    box-shadow: 4px 3px 13px -4px rgba(46, 50, 24, 1);
+}
+
+.nav.active {
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 12%;
+    height: 300px;
+    background-color: rgb(255,255,255);
+    border: solid 1px black
+}
+
+.nav ul li {
+    list-style: none;
+    margin-bottom: 15px;
+
+}
+
+.nav ul li:hover {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    letter-spacing: 2.5px;
+    
+}
+
+.menu-close {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 160px;
+    cursor: pointer;
+}
+
+.menu-close span {
+    width: 20px;
+    height: 2px;
+    background: rgb(128, 128, 128);
+    display: flex;
+}
+
+
+.menu-close span:nth-child(1) {
+    position: relative;
+    top: 11px;
+    transform: rotate(45deg);
+}
+
+.menu-close span:nth-child(2) {
+    position: relative;
+    top: 9px;
+    transform: rotate(135deg);
+}
+
+/* </navigation> */
+
+/* <introduction> */
+
+.intro {
+    width: 60%;
+    margin: 40px auto;
+    margin: 40px auto 180px auto;
+}
+
+.intro-content-wrapper{
+    display: flex;
+}
+
+.intro-image {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 130px;
+    left: 60px;
+}
+ 
+.intro .my-profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 8px 7px 12px 0px rgba(46, 50, 24, 1);
+}
+
+
+.intro .title {
+    display: inline-block;
+    padding: 225px 0 0 80px;
+}
+
+.intro .greet {
+    font-size: 4em;
+}
+
+.intro .name {
+    font-size: 3em;
+}
+
+.intro .name h1 {
+    margin: 0;
+}
+
+
+.specialty {
+    background-color: rgb(22, 224, 189);
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.specialty span {
+    position: relative;
+    left: 29px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.contacts {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 54px 20px;   
+}
+
+.contacts .e-mail ,.contacts .phone, .contacts .address {
+    display:flex;
+    width: 26%;
+}
+
+.contacts .contacts-icon i {
+    font-size: 92px;
+    color: gray;
+}
+
+.contacts .contacts-content {
+    font-size: 25px;
+    padding: 20px;
+}
+
+.contacts .contacts-content ul {
+    padding: 0;
+}
+
+.contacts .contacts-content ul li {
+    list-style: none;
+}
+
+.contacts .contacts-content ul li:nth-child(1) {
+    font-weight: 600;
+}
+
+/* </introduction> */
+
+
+
+/* <main part> */
+
+/* <education> */
+main .edu {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)), url('./MyImages/comp.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    height: 830px;
+    color: rgb(225,225,225);
+}
+
+main .edu h2 {
+    text-transform: uppercase;
+    padding-top: 60px;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 3em;
+    padding-bottom: 13px;
+}
+
+main .edu .modules {
+    display: flex;
+    padding-left: 30px;
+}
+
+
+
+main .edu article { 
+    width: 400px;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.article-title {
+    height: 190px;
+}
+
+.article-title h3 {
+    font-size: 21px;
+}
+
+.soft-uni {
+    font-style: italic;
+}
+
+main .edu article li {
+    padding-bottom: 5px;
+}
+
+/* </education> */
+
+/* <personal data> */
+
+.personal-data {
+    width: 50%;
+    margin: 180px auto;
+}
+
+.personal-data h1 {
+    margin: 5px;
+    font-size: 40px;
+}
+
+.personal-subtitle {
+    padding: 12px;
+    background-color: rgb(22, 224, 189);
+}
+
+.personal-content-wrapper {
+    display: flex;
+}
+
+.personal-content {
+    width: 59%;
+    padding: 10px;
+}
+
+.personal-image {
+    width: 290px;
+    height: 390px;
+    position: relative;
+    bottom: 100px;
+    left: 16px;
+}
+
+.personal-image img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 8px 7px 12px 0px rgba(46, 50, 24, 1);
+}
+
+/* </personal data> */
+
+/* <skills> */
+
+.skills {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url('./MyImages/Study-Computer-Science.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    object-fit: cover;
+    background-size: 100%;
+    color: rgb(225,225,225);
+    padding: 0 50px 80px 50px;
+}
+
+.skills h2 {
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.skills-content-wrapper {
+    
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    
+}
+
+.skills-content-wrapper li {
+    padding-bottom: 5px;
+}
+
+.job-related, .language, .other {
+    width: 25%;
+    padding: 20px;
+}
+
+.job-related-title, .language-title, .other-title {
+    border-bottom: solid 2px white;
+    padding-bottom: 2px;
+    margin-bottom: 50px;
+}
+
+/* <skill logos> */
+
+.skills-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.skills-logo div {
+    width: 100px;
+}
+
+.photoshop img, .html img, .css img, .java-script img {
+    width: 100%;
+}
+
+/* </skill logos> */
+
+/* <footer> */
+
